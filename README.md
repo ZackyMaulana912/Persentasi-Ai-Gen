@@ -2,6 +2,8 @@
 
 Presentasi web interaktif yang membahas **Generative AI** (Kecerdasan Buatan Generatif): cara kerja, jenis, manfaat, dan tantangannya. Dibuat sebagai situs statis dengan slide berbasis scroll dan animasi.
 
+🔗 **Live demo:** [persentasi-ai-gen.vercel.app](https://persentasi-ai-gen.vercel.app)
+
 ## ✨ Fitur
 
 - Presentasi berbasis slide dengan navigasi indikator
