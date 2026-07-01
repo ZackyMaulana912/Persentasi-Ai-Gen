@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Generative AI — Kecerdasan Buatan Generatif</title>
+  <meta name="description"
+    content="Presentasi interaktif tentang Generative AI: cara kerja, jenis, manfaat, dan tantangan kecerdasan buatan generatif dalam kehidupan modern." />
+  <meta property="og:title" content="Generative AI — Kecerdasan Buatan Generatif" />
+  <meta property="og:description"
+    content="Presentasi interaktif yang membahas AI generatif secara mendalam dan visual." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Latar animasi blob -->
+  <div class="bg-blobs" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <!-- Navigasi indikator slide -->
+  <nav class="slide-nav" id="slide-nav" aria-label="Navigasi Slide">
+    <div class="nav-dots">
+      <button class="nav-dot active" data-target="slide-1" aria-label="Slide 1 – Halaman Utama"></button>
+      <button class="nav-dot" data-target="slide-2" aria-label="Slide 2 – Apa itu Generative AI"></button>
+      <button class="nav-dot" data-target="slide-3" aria-label="Slide 3 – Cara Kerja"></button>
+      <button class="nav-dot" data-target="slide-4" aria-label="Slide 4 – Jenis Generative AI"></button>
+      <button class="nav-dot" data-target="slide-5" aria-label="Slide 5 – Penerapan Industri"></button>
+      <button class="nav-dot" data-target="slide-6" aria-label="Slide 6 – Manfaat"></button>
+      <button class="nav-dot" data-target="slide-7" aria-label="Slide 7 – Tantangan"></button>
+      <button class="nav-dot" data-target="slide-8" aria-label="Slide 8 – Masa Depan"></button>
+    </div>
+  </nav>
+
+  <!-- Indikator kemajuan scroll -->
+  <div class="scroll-progress" id="scroll-progress" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+    aria-valuemax="100"></div>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════════════ -->
+    <!-- SLIDE 1 — HERO                                      -->
+    <!-- ═══════════════════════════════════════════════════ -->
+    <section class="slide slide-hero" id="slide-1" aria-label="Halaman Utama">
+      <div class="hero-content">
+        <div class="hero-badge reveal-up">
+          <span class="badge-dot"></span>
+          <span>Pembelajaran Mesin</span>
+        </div>
+        <h1 class="hero-title reveal-up delay-1">
+          <span class="title-line">Generative</span>
+          <span class="title-line gradient-text">AI</span>
+        </h1>
+        <p class="hero-subtitle reveal-up delay-2">
+          Mengenal teknologi yang sedang mengubah cara kita bekerja, belajar, dan berkarya —
+          mulai dari cara kerjanya, jenis-jenisnya, manfaatnya, hingga tantangannya.<br />
+          <strong>Kecerdasan Buatan Generatif</strong>
+        </p>
+        <p class="hero-caption reveal-up delay-3">
+          Disusun oleh Zacky, Venerdi, Andy, dan Vlahadiqa
+        </p>
+        <div class="hero-scroll-hint reveal-up delay-4" aria-label="Gulir ke bawah">
+          <span>Gulir ke bawah</span>
+          <div class="scroll-arrow">
+            <div class="arrow-line"></div>
+            <div class="arrow-head"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Elemen visual hero -->
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-img-wrapper">
+          <img src="assets/hero-brain.png" alt="" class="hero-float-img" />
+          <div class="hero-img-glow"></div>
+        </div>
+        <div class="orbit-ring ring-1">
+          <div class="orbit-dot dot-1"></div>
+        </div>
+        <div class="orbit-ring ring-2">
+          <div class="orbit-dot dot-2"></div>
+        </div>
+        <div class="orbit-ring ring-3">
+          <div class="orbit-dot dot-3"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════ -->
+    <!-- SLIDE 2 — APA ITU GENERATIVE AI                    -->
+    <!-- ═══════════════════════════════════════════════════ -->
+    <section class="slide" id="slide-2" aria-label="Apa itu Generative AI">
+      <div class="slide-inner">
+        <div class="section-label reveal-up">Slide 02</div>
+        <h2 class="slide-title reveal-up delay-1">
+          Apa itu <span class="gradient-text">Generative AI?</span>
+        </h2>
+        <p class="slide-desc reveal-up delay-2">
+          Generative AI atau <em>AI Generatif</em> adalah cabang kecerdasan buatan yang mampu
+          <strong>menciptakan konten baru</strong> — berupa teks, gambar, audio, video, hingga kode program.
+          Berbeda dengan AI biasa yang hanya menganalisis atau mengelompokkan data, AI generatif
+          benar-benar <em>membuat</em> sesuatu yang baru berdasarkan pola yang ia pelajari dari data
+          dalam jumlah sangat besar.
+        </p>
+
+        <div class="cards-grid reveal-up delay-3">
+          <div class="glass-card card-hover" id="card-belajar">
+            <div class="card-icon" aria-hidden="true">🧠</div>
+            <h3>Belajar dari Data</h3>
+            <p>Model dilatih menggunakan miliaran contoh teks, gambar, dan suara hingga mampu mengenali pola, gaya, dan
+              hubungan di dalamnya — mirip seperti manusia belajar dari banyak pengalaman.</p>
+          </div>
+          <div class="glass-card card-hover" id="card-hasilkan">
+            <div class="card-icon" aria-hidden="true">⚡</div>
+            <h3>Menghasilkan Konten Baru</h3>
+            <p>Bukan sekadar menyalin atau mencari jawaban yang sudah ada. Model menyusun keluaran yang orisinal dan
+              sesuai dengan permintaan (prompt) yang kita berikan.</p>
+          </div>
+          <div class="glass-card card-hover" id="card-arsitektur">
+            <div class="card-icon" aria-hidden="true">🔬</div>
+            <h3>Berbasis Teknologi Modern</h3>
+            <p>Ditenagai arsitektur canggih seperti <strong>Transformer</strong> (untuk teks) dan <strong>diffusion
+                model</strong> (untuk gambar) yang menjadi fondasi kecerdasannya.</p>
+          </div>
+        </div>
+
+        <div class="flow-diagram reveal-up delay-4" aria-label="Alur kerja Generative AI">
+          <div class="flow-step">
+            <div class="flow-icon">💬</div>
+            <span>Masukan Pengguna</span>
+          </div>
+          <div class="flow-arrow" aria-hidden="true">→</div>
+          <div class="flow-step">
+            <div class="flow-icon">⚙️</div>
+            <span>Model Generatif</span>
+          </div>
+          <div class="flow-arrow" aria-hidden="true">→</div>
+          <div class="flow-step">
+            <div class="flow-icon">✨</div>
+            <span>Konten Baru</span>
+          </div>
+        </div>
+
+        <div class="tools-row reveal-up delay-5" aria-label="Contoh alat Generative AI">
+          <span class="tool-badge">ChatGPT</span>
+          <span class="tool-badge">Midjourney</span>
+          <span class="tool-badge">Gemini</span>
+          <span class="tool-badge">Claude</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════ -->
+    <!-- SLIDE 3 — BAGAIMANA BEKERJA                        -->
+    <!-- ═══════════════════════════════════════════════════ -->
+    <section class="slide slide-dark" id="slide-3" aria-label="Cara Kerja Generative AI">
+      <div class="slide-inner">
+        <div class="section-label reveal-up">Slide 03</div>
+        <h2 class="slide-title reveal-up delay-1">
+          Bagaimana <span class="gradient-text">Cara Kerjanya?</span>
+        </h2>
+        <p class="slide-desc reveal-up delay-2">
+          Secara sederhana, AI generatif bekerja melalui empat tahap utama — dari mengumpulkan dan
+          mempelajari data, hingga akhirnya menghasilkan keluaran yang kita butuhkan.
+        </p>
+
+        <div class="slide-visual-float reveal-right delay-3">
+          <img src="assets/data-flow.png" alt="Ilustrasi alur data Generative AI" class="float-img" />
+        </div>
+
+        <div class="steps-container">
+          <div class="step-item reveal-left" id="step-1">
+            <div class="step-number">01</div>
+            <div class="step-content">
+              <div class="step-icon" aria-hidden="true">📦</div>
+              <h3>Pengumpulan Data</h3>
+              <p>Data dalam jumlah sangat besar — teks, gambar, dan audio dari berbagai sumber — dikumpulkan dan
+                dirapikan terlebih dahulu sebagai bahan belajar model.</p>
+            </div>
+            <div class="step-line" aria-hidden="true"></div>
+          </div>
+          <div class="step-item reveal-right" id="step-2">
+            <div class="step-number">02</div>
+            <div class="step-content">
+              <div class="step-icon" aria-hidden="true">🤖</div>
+              <h3>Pelatihan Model</h3>
+              <p>Menggunakan jaringan saraf tiruan (<em>neural network</em>), model mempelajari pola, struktur, dan
+                hubungan antar data berulang kali sampai semakin pandai memprediksi.</p>
+            </div>
+            <div class="step-line" aria-hidden="true"></div>
+          </div>
+          <div class="step-item reveal-left" id="step-3">
+            <div class="step-number">03</div>
+            <div class="step-content">
+              <div class="step-icon" aria-hidden="true">💡</div>
+              <h3>Masukan Pengguna (Prompt)</h3>
+              <p>Pengguna memberi instruksi, pertanyaan, atau contoh sebagai pemicu. Semakin jelas perintahnya, semakin
+                sesuai pula hasil yang diberikan model.</p>
+            </div>
+            <div class="step-line" aria-hidden="true"></div>
+          </div>
+          <div class="step-item reveal-right" id="step-4">
+            <div class="step-number">04</div>
+            <div class="step-content">
+              <div class="step-icon" aria-hidden="true">🎯</div>
+              <h3>Menghasilkan Keluaran</h3>
+              <p>Model memprediksi elemen demi elemen lalu merangkainya menjadi hasil akhir yang utuh dan bermakna —
+                misalnya sebuah paragraf, gambar, atau potongan kode.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════ -->
+    <!-- SLIDE 4 — JENIS GENERATIVE AI                      -->
+    <!-- ═══════════════════════════════════════════════════ -->
+    <section class="slide" id="slide-4" aria-label="Jenis Generative AI">
+      <div class="slide-inner">
+        <div class="section-label reveal-up">Slide 04</div>
+        <h2 class="slide-title reveal-up delay-1">
+          Jenis<span class="gradient-text">–Jenis</span> Generative AI
+        </h2>
+        <p class="slide-desc reveal-up delay-2">
+          AI generatif dikelompokkan berdasarkan jenis konten yang dihasilkannya. Berikut enam jenis
+          yang paling umum kita temui sehari-hari, lengkap dengan contoh alat populernya.
+        </p>
+
+        <div class="slide-visual-center reveal-up delay-2" aria-hidden="true">
+          <img src="assets/types-grid.png" alt="" class="float-img float-img-wide" />
+        </div>
+
+        <div class="types-grid reveal-up delay-3">
+          <div class="type-card" id="type-teks">
+            <div class="type-emoji" aria-hidden="true">📝</div>
+            <div class="type-label">Teks</div>
+            <div class="type-tools">ChatGPT · Claude · Gemini</div>
+            <div class="type-desc">Menulis artikel, meringkas dokumen, menjawab pertanyaan, hingga menerjemahkan bahasa.
+            </div>
+            <div class="type-glow"></div>
+          </div>
+          <div class="type-card" id="type-gambar">
+            <div class="type-emoji" aria-hidden="true">🎨</div>
+            <div class="type-label">Gambar</div>
+            <div class="type-tools">Midjourney · DALL·E · Stable Diffusion</div>
+            <div class="type-desc">Membuat ilustrasi, logo, dan desain visual hanya dari deskripsi teks.</div>
+            <div class="type-glow"></div>
+          </div>
+          <div class="type-card" id="type-audio">
+            <div class="type-emoji" aria-hidden="true">🎵</div>
+            <div class="type-label">Audio &amp; Musik</div>
+            <div class="type-tools">Suno · ElevenLabs</div>
+            <div class="type-desc">Menggubah musik, meniru suara, dan mengubah teks menjadi narasi yang natural.</div>
+            <div class="type-glow"></div>
+          </div>
+          <div class="type-card" id="type-video">
+            <div class="type-emoji" aria-hidden="true">🎬</div>
+            <div class="type-label">Video</div>
+            <div class="type-tools">Sora · Runway</div>
+            <div class="type-desc">Menghasilkan klip video singkat dari perintah teks maupun gambar diam.</div>
+            <div class="type-glow"></div>
+          </div>
+          <div class="type-card" id="type-kode">
+            <div class="type-emoji" aria-hidden="true">💻</div>
+            <div class="type-label">Kode Program</div>
+            <div class="type-tools">GitHub Copilot · Claude Code</div>
+            <div class="type-desc">Menulis, menjelaskan, dan memperbaiki kode untuk mempercepat pekerjaan programmer.
+            </div>
+            <div class="type-glow"></div>
+          </div>
+          <div class="type-card" id="type-data">
+            <div class="type-emoji" aria-hidden="true">📊</div>
+            <div class="type-label">Data Sintetis</div>
+            <div class="type-tools">Alat khusus penelitian</div>
+            <div class="type-desc">Membuat data tiruan yang menyerupai aslinya untuk simulasi dan pelatihan model lain.
+            </div>
+            <div class="type-glow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════ -->
+    <!-- SLIDE 5 — PENERAPAN INDUSTRI                       -->
+    <!-- ═══════════════════════════════════════════════════ -->
+    <section class="slide slide-dark" id="slide-5" aria-label="Penerapan di Berbagai Industri">
+      <div class="slide-inner">
+        <div class="section-label reveal-up">Slide 05</div>
+        <h2 class="slide-title reveal-up delay-1">
+          Penerapan di <span class="gradient-text">Berbagai Industri</span>
+        </h2>
+        <p class="slide-desc reveal-up delay-2">
+          AI generatif kini dipakai di hampir semua bidang untuk menghemat waktu dan meningkatkan
+          produktivitas. Berikut beberapa contoh penerapannya yang paling terasa manfaatnya.
+        </p>
+
+        <div class="slide-visual-center reveal-up delay-2" aria-hidden="true">
+          <img src="assets/industry.png" alt="" class="float-img float-img-wide" />
+        </div>
+
+        <div class="industry-grid">
+          <div class="industry-card reveal-up delay-2" id="ind-bisnis">
+            <div class="industry-header">
+              <span class="industry-emoji" aria-hidden="true">📈</span>
+              <h3>Bisnis &amp; Pemasaran</h3>
+            </div>
+            <p>Menyusun naskah iklan, caption media sosial, email promosi, dan materi presentasi dalam waktu singkat
+              sehingga tim bisa fokus pada strategi.</p>
+            <div class="industry-tag">Konten Otomatis</div>
+          </div>
+          <div class="industry-card reveal-up delay-3" id="ind-pendidikan">
+            <div class="industry-header">
+              <span class="industry-emoji" aria-hidden="true">📚</span>
+              <h3>Pendidikan</h3>
+            </div>
+            <p>Menjadi tutor pribadi yang sabar, membantu guru menyiapkan materi ajar, serta membuat latihan soal dan
+              penjelasan yang menyesuaikan kemampuan tiap siswa.</p>
+            <div class="industry-tag">Belajar Adaptif</div>
+          </div>
+          <div class="industry-card reveal-up delay-4" id="ind-desain">
+            <div class="industry-header">
+              <span class="industry-emoji" aria-hidden="true">🎭</span>
+              <h3>Desain &amp; Kreatif</h3>
+            </div>
+            <p>Menghasilkan konsep visual, contoh produk (mockup), dan ilustrasi dalam hitungan menit, mempercepat
+              proses dari ide menjadi karya nyata.</p>
+            <div class="industry-tag">Visual Cepat</div>
+          </div>
+          <div class="industry-card reveal-up delay-5" id="ind-layanan">
+            <div class="industry-header">
+              <span class="industry-emoji" aria-hidden="true">💬</span>
+              <h3>Layanan Pelanggan</h3>
+            </div>
+            <p>Chatbot cerdas yang siap menjawab pertanyaan pelanggan kapan saja, 24 jam sehari, dengan respons cepat
+              dan bahasa yang ramah.</p>
+            <div class="industry-tag">Tersedia 24 Jam</div>
+          </div>
+          <div class="industry-card reveal-up delay-5" id="ind-kesehatan">
+            <div class="industry-header">
+              <span class="industry-emoji" aria-hidden="true">🩺</span>
+              <h3>Kesehatan</h3>
+            </div>
+            <p>Membantu merangkum rekam medis, menjelaskan istilah medis dengan bahasa awam, dan mendukung penelitian
+              obat baru — selalu di bawah pengawasan tenaga ahli.</p>
+            <div class="industry-tag">Pendukung Tenaga Medis</div>
+          </div>
+          <div class="industry-card reveal-up delay-5" id="ind-programmer">
+            <div class="industry-header">
+              <span class="industry-emoji" aria-hidden="true">⚙️</span>
+              <h3>Teknologi &amp; Programmer</h3>
+            </div>
+            <p>Mempercepat penulisan kode, membantu mencari kesalahan (bug), dan menjelaskan program yang rumit sehingga
+              pengembangan perangkat lunak jadi lebih efisien.</p>
+            <div class="industry-tag">Bantu Coding</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════ -->
+    <!-- SLIDE 6 — MANFAAT                                  -->
+    <!-- ═══════════════════════════════════════════════════ -->
+    <section class="slide" id="slide-6" aria-label="Manfaat Generative AI">
+      <div class="slide-inner">
+        <div class="section-label reveal-up">Slide 06</div>
+        <h2 class="slide-title reveal-up delay-1">
+          Manfaat <span class="gradient-text">Generative AI</span>
+        </h2>
+
+        <div class="benefits-layout">
+          <div class="benefits-list">
+            <div class="benefit-item reveal-left delay-2" id="benefit-produktif">
+              <div class="benefit-icon" aria-hidden="true">🚀</div>
+              <div class="benefit-text">
+                <h3>Produktivitas Lebih Tinggi</h3>
+                <p>Pekerjaan yang tadinya butuh berjam-jam — menulis, meriset, atau merangkum — bisa selesai jauh lebih
+                  cepat, sehingga kita punya lebih banyak waktu untuk hal penting.</p>
+              </div>
+            </div>
+            <div class="benefit-item reveal-left delay-3" id="benefit-kreativitas">
+              <div class="benefit-icon" aria-hidden="true">💎</div>
+              <div class="benefit-text">
+                <h3>Mendorong Kreativitas</h3>
+                <p>Berperan sebagai teman bertukar pikiran yang membantu memunculkan ide baru dan banyak variasi desain,
+                  sehingga kita tidak mudah kehabisan inspirasi.</p>
+              </div>
+            </div>
+            <div class="benefit-item reveal-left delay-4" id="benefit-efisiensi">
+              <div class="benefit-icon" aria-hidden="true">💰</div>
+              <div class="benefit-text">
+                <h3>Efisiensi Biaya</h3>
+                <p>Mengurangi pekerjaan manual yang berulang sehingga biaya operasional bisa ditekan dan sumber daya
+                  dialihkan ke pekerjaan yang lebih bernilai.</p>
+              </div>
+            </div>
+            <div class="benefit-item reveal-left delay-5" id="benefit-personal">
+              <div class="benefit-icon" aria-hidden="true">🎯</div>
+              <div class="benefit-text">
+                <h3>Personalisasi</h3>
+                <p>Mampu menyesuaikan konten, rekomendasi, dan jawaban dengan kebutuhan tiap orang, membuat pengalaman
+                  terasa lebih relevan dan personal.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="stats-panel reveal-right delay-2">
+            <div class="stat-card" id="stat-efisiensi">
+              <div class="stat-number" data-target="40">0</div>
+              <div class="stat-unit">%</div>
+              <p>Peningkatan efisiensi penulisan konten dengan bantuan AI generatif</p>
+            </div>
+            <div class="stat-separator" aria-hidden="true"></div>
+            <div class="stat-card" id="stat-kecepatan">
+              <div class="stat-number" data-target="3">0</div>
+              <div class="stat-unit">×</div>
+              <p>Lebih cepat dalam menghasilkan draf awal dibanding cara biasa</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════ -->
+    <!-- SLIDE 7 — TANTANGAN                                -->
+    <!-- ═══════════════════════════════════════════════════ -->
+    <section class="slide slide-dark" id="slide-7" aria-label="Tantangan dan Risiko Generative AI">
+      <div class="slide-inner">
+        <div class="section-label reveal-up">Slide 07</div>
+        <h2 class="slide-title reveal-up delay-1">
+          Tantangan dan <span class="gradient-text accent-warn">Risiko</span>
+        </h2>
+        <p class="slide-desc reveal-up delay-2">
+          Di balik manfaatnya yang besar, AI generatif juga punya keterbatasan dan risiko. Memahaminya
+          sejak awal membuat kita bisa menggunakannya secara lebih bijak dan bertanggung jawab.
+        </p>
+
+        <div class="slide-visual-center reveal-up delay-2" aria-hidden="true">
+          <img src="assets/challenges.png" alt="" class="float-img float-img-wide" />
+        </div>
+
+        <div class="challenges-grid">
+          <div class="challenge-card reveal-up delay-2" id="chal-halusinasi">
+            <div class="challenge-top">
+              <div class="challenge-warning" aria-hidden="true">⚠️</div>
+              <div class="challenge-severity high">Risiko Tinggi</div>
+            </div>
+            <h3>Halusinasi &amp; Informasi Keliru</h3>
+            <p>Model bisa memberi jawaban yang terdengar sangat meyakinkan padahal salah. Karena itu, hasilnya tetap
+              perlu kita periksa ulang kebenarannya.</p>
+          </div>
+          <div class="challenge-card reveal-up delay-3" id="chal-bias">
+            <div class="challenge-top">
+              <div class="challenge-warning" aria-hidden="true">⚠️</div>
+              <div class="challenge-severity medium">Risiko Sedang</div>
+            </div>
+            <h3>Bias dalam Data Pelatihan</h3>
+            <p>Jika data latihnya mengandung bias atau ketidakadilan, hasil keluaran model pun bisa ikut berat sebelah
+              dan kurang netral.</p>
+          </div>
+          <div class="challenge-card reveal-up delay-4" id="chal-privasi">
+            <div class="challenge-top">
+              <div class="challenge-warning" aria-hidden="true">🔒</div>
+              <div class="challenge-severity high">Risiko Tinggi</div>
+            </div>
+            <h3>Privasi &amp; Keamanan Data</h3>
+            <p>Data pribadi atau rahasia berisiko bocor jika dimasukkan sembarangan. Hindari membagikan informasi
+              sensitif ke layanan AI publik.</p>
+          </div>
+          <div class="challenge-card reveal-up delay-5" id="chal-etika">
+            <div class="challenge-top">
+              <div class="challenge-warning" aria-hidden="true">⚖️</div>
+              <div class="challenge-severity medium">Perlu Perhatian</div>
+            </div>
+            <h3>Hak Cipta &amp; Etika</h3>
+            <p>Muncul pertanyaan tentang siapa pemilik karya buatan AI dan apakah data pelatihannya digunakan secara
+              adil dan sah.</p>
+          </div>
+          <div class="challenge-card reveal-up delay-5" id="chal-ketergantungan">
+            <div class="challenge-top">
+              <div class="challenge-warning" aria-hidden="true">🧭</div>
+              <div class="challenge-severity medium">Perlu Perhatian</div>
+            </div>
+            <h3>Ketergantungan Berlebihan</h3>
+            <p>Terlalu mengandalkan AI dapat menumpulkan kemampuan berpikir kritis. AI sebaiknya menjadi alat bantu,
+              bukan pengganti penilaian kita.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════ -->
+    <!-- SLIDE 8 — MASA DEPAN                               -->
+    <!-- ═══════════════════════════════════════════════════ -->
+    <section class="slide slide-finale" id="slide-8" aria-label="Masa Depan Generative AI">
+      <div class="slide-inner">
+        <div class="section-label reveal-up">Slide 08</div>
+        <h2 class="slide-title reveal-up delay-1">
+          Masa Depan <span class="gradient-text">Generative AI</span>
+        </h2>
+        <p class="slide-desc reveal-up delay-2">
+          AI generatif akan terus berkembang menjadi lebih akurat, mampu memahami banyak jenis data
+          sekaligus (teks, gambar, suara, video — disebut <em>multimodal</em>), dan semakin menyatu
+          dalam kehidupan sehari-hari. Ini membuka peluang besar, sekaligus menuntut kita mengelolanya
+          dengan bijak.
+        </p>
+
+        <div class="slide-visual-center reveal-up delay-2" aria-hidden="true">
+          <img src="assets/future.png" alt="" class="float-img float-img-wide" />
+        </div>
+
+        <div class="future-pillars reveal-up delay-3">
+          <div class="pillar" id="pillar-kolaborasi">
+            <div class="pillar-glow" aria-hidden="true"></div>
+            <div class="pillar-icon" aria-hidden="true">🤝</div>
+            <h3>Kolaborasi Manusia &amp; AI</h3>
+            <p>AI tidak menggantikan manusia, melainkan menjadi rekan kerja yang memperkuat kemampuan kita agar hasilnya
+              lebih cepat dan lebih baik.</p>
+          </div>
+          <div class="pillar" id="pillar-regulasi">
+            <div class="pillar-glow" aria-hidden="true"></div>
+            <div class="pillar-icon" aria-hidden="true">📋</div>
+            <h3>Regulasi &amp; Etika yang Matang</h3>
+            <p>Dibutuhkan aturan yang jelas agar AI digunakan secara aman, adil, dan bertanggung jawab demi melindungi
+              kepentingan bersama.</p>
+          </div>
+          <div class="pillar" id="pillar-akses">
+            <div class="pillar-glow" aria-hidden="true"></div>
+            <div class="pillar-icon" aria-hidden="true">🌍</div>
+            <h3>Akses untuk Semua</h3>
+            <p>Teknologi AI diharapkan makin terjangkau sehingga manfaatnya bisa dirasakan semua kalangan, bukan hanya
+              segelintir orang.</p>
+          </div>
+        </div>
+
+        <div class="thankyou-block reveal-up delay-4">
+          <div class="thankyou-line" aria-hidden="true"></div>
+          <p class="thankyou-text">Terima Kasih</p>
+          <p class="thankyou-sub">Atas perhatian dan waktu yang diberikan</p>
+          <div class="thankyou-line" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
