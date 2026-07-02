@@ -4,14 +4,14 @@ Presentasi web interaktif yang membahas **Generative AI** (Kecerdasan Buatan Gen
 
 🔗 **Live demo:** [persentasi-ai-gen.vercel.app](https://persentasi-ai-gen.vercel.app)
 
-## ✨ Fitur
+## Fitur
 
 - Presentasi berbasis slide dengan navigasi indikator
 - Desain responsif dengan latar animasi (blob)
 - Konten dalam Bahasa Indonesia
 - Tanpa framework — HTML, CSS, dan JavaScript murni
 
-## 📁 Struktur Proyek
+## Struktur Proyek
 
 ```
 .
@@ -22,7 +22,7 @@ Presentasi web interaktif yang membahas **Generative AI** (Kecerdasan Buatan Gen
 └── ISI.md          # Naskah / isi materi presentasi
 ```
 
-## 🚀 Menjalankan Secara Lokal
+## Menjalankan Secara Lokal
 
 Karena ini situs statis, cukup buka `index.html` di browser, atau jalankan server lokal:
 
@@ -52,6 +52,6 @@ npm i -g vercel
 vercel
 ```
 
-## 📄 Lisensi
+## Lisensi
 
 Bebas digunakan untuk keperluan edukasi dan presentasi.
